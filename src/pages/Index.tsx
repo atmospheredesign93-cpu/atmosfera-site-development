@@ -91,7 +91,7 @@ const Index = () => {
       style: 'modern',
       city: 'Сочи',
       area: 200,
-      image: 'https://cdn.poehali.dev/projects/249bcc05-b9e1-4424-ad17-f8228415d084/files/d82434f0-e45a-44d0-9b7e-a04d84f6e510.jpg',
+      image: 'https://cdn.poehali.dev/projects/249bcc05-b9e1-4424-ad17-f8228415d084/files/7357f87b-a2d5-4d17-af91-2b6d87929f17.jpg',
       description: 'Элегантный ресторан с авторским интерьером и панорамными окнами'
     },
     {
