@@ -401,7 +401,7 @@ const Index = () => {
                 </div>
                 <div className="aspect-[16/10] w-full">
                   <iframe
-                    src="https://yandex.ru/map-widget/v1/?ll=38.975891%2C45.025446&z=17&pt=38.975891,45.025446,pm2rdm"
+                    src="https://yandex.ru/map-widget/v1/?ll=39.011506%2C45.023495&z=17&pt=39.011506,45.023495,pm2rdm"
                     width="100%"
                     height="100%"
                     frameBorder="0"
