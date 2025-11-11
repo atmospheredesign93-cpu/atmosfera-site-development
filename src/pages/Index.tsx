@@ -81,7 +81,7 @@ const Index = () => {
       style: 'modern',
       city: 'Краснодар',
       area: 120,
-      image: 'https://cdn.poehali.dev/projects/249bcc05-b9e1-4424-ad17-f8228415d084/files/9121fdcb-3038-48ea-8902-20203ef82be1.jpg',
+      image: 'https://cdn.poehali.dev/projects/249bcc05-b9e1-4424-ad17-f8228415d084/files/5a6777f8-536b-43f3-a4a7-a8b157182bb7.jpg',
       description: 'Стильный офис с открытой планировкой и современным дизайном'
     },
     {
