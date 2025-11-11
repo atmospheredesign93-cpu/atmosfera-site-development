@@ -223,7 +223,7 @@ const Index = () => {
         />
         <div className="relative z-10 text-center text-white px-4 animate-fade-in">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6">
-            Дизайн и ремонт<br />в Краснодаре и по всему Краснодарскому краю
+            Дизайн и ремонт<br />в Краснодаре и по краю
           </h1>
           <p className="text-base sm:text-lg md:text-xl lg:text-2xl mb-6 sm:mb-8 text-gray-200">
             Авторские проекты и качественный ремонт «под ключ»
