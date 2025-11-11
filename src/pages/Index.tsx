@@ -758,6 +758,73 @@ const Index = () => {
         </div>
       </section>
 
+      <section className="py-12 sm:py-16 md:py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-3 sm:mb-4">Наши офисы</h2>
+          <p className="text-center text-muted-foreground mb-8 sm:mb-12 text-base sm:text-lg">
+            Приходите к нам на консультацию в удобное для вас время
+          </p>
+          
+          <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+            <Card className="overflow-hidden">
+              <CardContent className="p-0">
+                <div className="p-6 bg-muted/30">
+                  <div className="flex items-start gap-3 mb-3">
+                    <Icon name="MapPin" size={24} className="text-primary mt-1" />
+                    <div>
+                      <h3 className="text-xl font-bold mb-1">Краснодар</h3>
+                      <p className="text-muted-foreground">ул. Маяковского, 160, офис 5</p>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                    <Icon name="Clock" size={16} />
+                    <span>Пн–Сб 9:00–19:00</span>
+                  </div>
+                </div>
+                <div className="aspect-[16/10] w-full">
+                  <iframe
+                    src="https://yandex.ru/map-widget/v1/?ll=38.976745%2C45.040428&z=17&pt=38.976745,45.040428,pm2rdm"
+                    width="100%"
+                    height="100%"
+                    frameBorder="0"
+                    allowFullScreen
+                    style={{position: 'relative'}}
+                  />
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="overflow-hidden">
+              <CardContent className="p-0">
+                <div className="p-6 bg-muted/30">
+                  <div className="flex items-start gap-3 mb-3">
+                    <Icon name="MapPin" size={24} className="text-primary mt-1" />
+                    <div>
+                      <h3 className="text-xl font-bold mb-1">Геленджик</h3>
+                      <p className="text-muted-foreground">ул. Рыбникова, 5, офис 2</p>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                    <Icon name="Clock" size={16} />
+                    <span>Пн–Сб 9:00–19:00</span>
+                  </div>
+                </div>
+                <div className="aspect-[16/10] w-full">
+                  <iframe
+                    src="https://yandex.ru/map-widget/v1/?ll=38.076669%2C44.560852&z=17&pt=38.076669,44.560852,pm2rdm"
+                    width="100%"
+                    height="100%"
+                    frameBorder="0"
+                    allowFullScreen
+                    style={{position: 'relative'}}
+                  />
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
       <footer className="bg-foreground text-background py-8 sm:py-12">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-3 gap-8 mb-8">
@@ -837,7 +904,7 @@ const Index = () => {
                     <Icon name="MapPin" size={18} className="mt-0.5 flex-shrink-0" />
                     <div>
                       <p className="font-semibold text-background">Краснодар</p>
-                      <p className="text-sm">ул. Красная, 123, офис 45</p>
+                      <p className="text-sm">ул. Маяковского, 160, офис 5</p>
                     </div>
                   </div>
                 </div>
@@ -846,7 +913,7 @@ const Index = () => {
                     <Icon name="MapPin" size={18} className="mt-0.5 flex-shrink-0" />
                     <div>
                       <p className="font-semibold text-background">Геленджик</p>
-                      <p className="text-sm">ул. Луначарского, 56, офис 12</p>
+                      <p className="text-sm">ул. Рыбникова, 5, офис 2</p>
                     </div>
                   </div>
                 </div>
