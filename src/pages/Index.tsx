@@ -168,6 +168,42 @@ const Index = () => {
         </div>
       </section>
 
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <h2 className="text-4xl font-bold text-center mb-4">О студии «Атмосфера»</h2>
+          <p className="text-center text-muted-foreground mb-12 text-lg max-w-3xl mx-auto">
+            Посмотрите видео о нашей студии, процессе работы и реализованных проектах
+          </p>
+          
+          <div className="max-w-5xl mx-auto">
+            <div className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl bg-muted">
+              <iframe
+                className="absolute inset-0 w-full h-full"
+                src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                title="Презентация студии Атмосфера"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            </div>
+            
+            <div className="grid md:grid-cols-3 gap-8 mt-12">
+              <div className="text-center">
+                <div className="text-4xl font-bold text-primary mb-2">150+</div>
+                <p className="text-muted-foreground">Реализованных проектов</p>
+              </div>
+              <div className="text-center">
+                <div className="text-4xl font-bold text-primary mb-2">8 лет</div>
+                <p className="text-muted-foreground">На рынке дизайна и ремонта</p>
+              </div>
+              <div className="text-center">
+                <div className="text-4xl font-bold text-primary mb-2">98%</div>
+                <p className="text-muted-foreground">Довольных клиентов</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl font-bold text-center mb-12">Наши преимущества</h2>
