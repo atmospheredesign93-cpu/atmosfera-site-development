@@ -73,6 +73,36 @@ const Index = () => {
       area: 20,
       image: 'https://cdn.poehali.dev/projects/249bcc05-b9e1-4424-ad17-f8228415d084/files/74cfeab4-fd3b-4185-8c01-14a5633ff0b0.jpg',
       description: 'Уютная спальня в светлых тонах с натуральными материалами'
+    },
+    {
+      id: 4,
+      title: 'Офис современной компании',
+      category: 'commercial',
+      style: 'modern',
+      city: 'Краснодар',
+      area: 120,
+      image: 'https://cdn.poehali.dev/projects/249bcc05-b9e1-4424-ad17-f8228415d084/files/9121fdcb-3038-48ea-8902-20203ef82be1.jpg',
+      description: 'Стильный офис с открытой планировкой и современным дизайном'
+    },
+    {
+      id: 5,
+      title: 'Ресторан премиум-класса',
+      category: 'commercial',
+      style: 'modern',
+      city: 'Сочи',
+      area: 200,
+      image: 'https://cdn.poehali.dev/projects/249bcc05-b9e1-4424-ad17-f8228415d084/files/d82434f0-e45a-44d0-9b7e-a04d84f6e510.jpg',
+      description: 'Элегантный ресторан с авторским интерьером и панорамными окнами'
+    },
+    {
+      id: 6,
+      title: 'Салон красоты',
+      category: 'commercial',
+      style: 'modern',
+      city: 'Геленджик',
+      area: 80,
+      image: 'https://cdn.poehali.dev/projects/249bcc05-b9e1-4424-ad17-f8228415d084/files/74cfeab4-fd3b-4185-8c01-14a5633ff0b0.jpg',
+      description: 'Современный салон с комфортными зонами и элегантной отделкой'
     }
   ];
 
@@ -529,6 +559,12 @@ const Index = () => {
               onClick={() => setFilter('house')}
             >
               Дома
+            </Button>
+            <Button 
+              variant={filter === 'commercial' ? 'default' : 'outline'}
+              onClick={() => setFilter('commercial')}
+            >
+              Коммерческие объекты
             </Button>
           </div>
 
