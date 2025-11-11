@@ -767,8 +767,7 @@ const Index = () => {
                 <span className="text-2xl font-bold" style={{color: '#9B7E4F'}}>Атмосфера</span>
               </div>
               <p className="text-background/80 mb-6">
-                Студия дизайна и ремонта<br />
-                по всему Краснодарскому краю
+                Студия дизайна и ремонта Краснодар
               </p>
               <div className="flex gap-4">
                 <a 
