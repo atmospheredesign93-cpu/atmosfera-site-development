@@ -800,7 +800,7 @@ const Index = () => {
               <div className="space-y-3 text-background/80">
                 <div className="flex items-center gap-2">
                   <Icon name="Phone" size={18} />
-                  <span>+7 (861) 123-45-67</span>
+                  <span>+7 (989) 808-93-93</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Icon name="Mail" size={18} />
@@ -830,7 +830,7 @@ const Index = () => {
       </footer>
 
       <a
-        href="tel:+78611234567"
+        href="tel:+79898089393"
         className="fixed bottom-6 right-6 w-16 h-16 rounded-full shadow-2xl flex items-center justify-center z-50 transition-transform hover:scale-110 active:scale-95 md:hidden"
         style={{backgroundColor: '#9B7E4F'}}
         aria-label="Позвонить"
