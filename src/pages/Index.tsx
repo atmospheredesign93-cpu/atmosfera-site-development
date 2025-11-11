@@ -828,6 +828,15 @@ const Index = () => {
           </div>
         </div>
       </footer>
+
+      <a
+        href="tel:+78611234567"
+        className="fixed bottom-6 right-6 w-16 h-16 rounded-full shadow-2xl flex items-center justify-center z-50 transition-transform hover:scale-110 active:scale-95 md:hidden"
+        style={{backgroundColor: '#9B7E4F'}}
+        aria-label="Позвонить"
+      >
+        <Icon name="Phone" size={28} className="text-white" />
+      </a>
     </div>
   );
 };
