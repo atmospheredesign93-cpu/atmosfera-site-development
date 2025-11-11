@@ -173,7 +173,13 @@ const Index = () => {
             <a href="#contact" className="text-foreground hover:text-primary transition">Контакты</a>
           </nav>
           <div className="flex items-center gap-2">
-            <Button className="hidden md:inline-flex" style={{backgroundColor: '#9B7E4F', color: 'white'}} onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#8A6F42'} onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#9B7E4F'}>
+            <Button 
+              className="hidden md:inline-flex" 
+              style={{backgroundColor: '#9B7E4F', color: 'white'}} 
+              onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#8A6F42'} 
+              onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#9B7E4F'}
+              onClick={() => window.location.href = 'tel:+79898089393'}
+            >
               <Icon name="Phone" size={16} className="mr-2" />
               Позвонить
             </Button>
@@ -194,7 +200,11 @@ const Index = () => {
               <a href="#portfolio" className="text-foreground hover:text-primary transition py-2" onClick={() => setMobileMenuOpen(false)}>Портфолио</a>
               <a href="#calculator" className="text-foreground hover:text-primary transition py-2" onClick={() => setMobileMenuOpen(false)}>Цены</a>
               <a href="#contact" className="text-foreground hover:text-primary transition py-2" onClick={() => setMobileMenuOpen(false)}>Контакты</a>
-              <Button className="w-full" style={{backgroundColor: '#9B7E4F', color: 'white'}}>
+              <Button 
+                className="w-full" 
+                style={{backgroundColor: '#9B7E4F', color: 'white'}}
+                onClick={() => window.location.href = 'tel:+79898089393'}
+              >
                 <Icon name="Phone" size={16} className="mr-2" />
                 Позвонить
               </Button>
@@ -457,7 +467,11 @@ const Index = () => {
                   Позвоните нам или оставьте заявку — и уже завтра ваша квартира начнёт меняться. 
                   Бесплатная консультация и выезд замерщика!
                 </p>
-                <Button size="lg" className="mt-2">
+                <Button 
+                  size="lg" 
+                  className="mt-2"
+                  onClick={() => window.location.href = 'tel:+79898089393'}
+                >
                   <Icon name="Phone" size={20} className="mr-2" />
                   Получить консультацию
                 </Button>
@@ -615,7 +629,10 @@ const Index = () => {
                         <span>Площадь: {project.area} м²</span>
                       </div>
                       <p className="text-lg">{project.description}</p>
-                      <Button className="w-full mt-4">
+                      <Button 
+                        className="w-full mt-4"
+                        onClick={() => window.location.href = 'tel:+79898089393'}
+                      >
                         <Icon name="Phone" size={18} className="mr-2" />
                         Заказать похожий проект
                       </Button>
