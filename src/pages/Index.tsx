@@ -101,7 +101,7 @@ const Index = () => {
       style: 'modern',
       city: 'Геленджик',
       area: 80,
-      image: 'https://cdn.poehali.dev/projects/249bcc05-b9e1-4424-ad17-f8228415d084/files/74cfeab4-fd3b-4185-8c01-14a5633ff0b0.jpg',
+      image: 'https://cdn.poehali.dev/projects/249bcc05-b9e1-4424-ad17-f8228415d084/files/a4e87738-1978-467a-91a8-6c9f0a132154.jpg',
       description: 'Современный салон с комфортными зонами и элегантной отделкой'
     }
   ];
