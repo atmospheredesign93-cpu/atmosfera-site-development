@@ -830,12 +830,27 @@ const Index = () => {
             </div>
             
             <div>
-              <h3 className="font-semibold text-lg mb-4">География работы</h3>
-              <p className="text-background/80">
-                Краснодар, Сочи, Геленджик,<br />
-                Анапа, Новороссийск<br />
-                и весь Краснодарский край
-              </p>
+              <h3 className="font-semibold text-lg mb-4">Наши офисы</h3>
+              <div className="space-y-4 text-background/80">
+                <div>
+                  <div className="flex items-start gap-2 mb-1">
+                    <Icon name="MapPin" size={18} className="mt-0.5 flex-shrink-0" />
+                    <div>
+                      <p className="font-semibold text-background">Краснодар</p>
+                      <p className="text-sm">ул. Красная, 123, офис 45</p>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div className="flex items-start gap-2">
+                    <Icon name="MapPin" size={18} className="mt-0.5 flex-shrink-0" />
+                    <div>
+                      <p className="font-semibold text-background">Геленджик</p>
+                      <p className="text-sm">ул. Луначарского, 56, офис 12</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           
