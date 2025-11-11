@@ -411,6 +411,73 @@ const Index = () => {
         </div>
       </section>
 
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <h2 className="text-4xl font-bold text-center mb-4">Наша команда</h2>
+          <p className="text-center text-muted-foreground mb-12 text-lg">
+            Профессионалы с многолетним опытом работы
+          </p>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+            <Card className="hover:shadow-xl transition-shadow">
+              <CardContent className="p-6">
+                <div className="aspect-[3/4] overflow-hidden rounded-lg mb-4">
+                  <img 
+                    src="https://cdn.poehali.dev/projects/249bcc05-b9e1-4424-ad17-f8228415d084/files/45ebce85-1e76-408c-8958-4033f3712845.jpg" 
+                    alt="Плуман Алена Викторовна"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <h3 className="text-lg font-bold mb-1">Плуман Алена Викторовна</h3>
+                <p className="text-muted-foreground">Генеральный директор</p>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-xl transition-shadow">
+              <CardContent className="p-6">
+                <div className="aspect-[3/4] overflow-hidden rounded-lg mb-4">
+                  <img 
+                    src="https://cdn.poehali.dev/projects/249bcc05-b9e1-4424-ad17-f8228415d084/files/aa744b1c-bbd9-479a-acac-c0fdb54d71f1.jpg" 
+                    alt="Новиков Роман Аркадьевич"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <h3 className="text-lg font-bold mb-1">Новиков Роман Аркадьевич</h3>
+                <p className="text-muted-foreground">Директор по производству</p>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-xl transition-shadow">
+              <CardContent className="p-6">
+                <div className="aspect-[3/4] overflow-hidden rounded-lg mb-4">
+                  <img 
+                    src="https://cdn.poehali.dev/projects/249bcc05-b9e1-4424-ad17-f8228415d084/files/7eaa5f98-3194-4014-b31e-94c0efde3717.jpg" 
+                    alt="Плуман Александр Евгеньевич"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <h3 className="text-lg font-bold mb-1">Плуман Александр Евгеньевич</h3>
+                <p className="text-muted-foreground">Зам. генерального директора</p>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-xl transition-shadow">
+              <CardContent className="p-6">
+                <div className="aspect-[3/4] overflow-hidden rounded-lg mb-4">
+                  <img 
+                    src="https://cdn.poehali.dev/projects/249bcc05-b9e1-4424-ad17-f8228415d084/files/71a71653-edd4-41b6-b16e-0736a2d06737.jpg" 
+                    alt="Иванов Иван Иванович"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <h3 className="text-lg font-bold mb-1">Иванов Иван Иванович</h3>
+                <p className="text-muted-foreground">Прораб</p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
       <section id="portfolio" className="py-20 bg-muted/30">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl font-bold text-center mb-4">Портфолио</h2>
