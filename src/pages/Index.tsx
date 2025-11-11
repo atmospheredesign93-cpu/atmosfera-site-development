@@ -315,7 +315,7 @@ const Index = () => {
               <CardContent className="p-6">
                 <div className="aspect-[3/4] overflow-hidden rounded-lg mb-4">
                   <img 
-                    src="https://cdn.poehali.dev/projects/249bcc05-b9e1-4424-ad17-f8228415d084/files/45ebce85-1e76-408c-8958-4033f3712845.jpg" 
+                    src="https://cdn.poehali.dev/files/57e29b97-7d24-40ed-85ce-0a2368f9c550.JPG" 
                     alt="Плуман Алена Викторовна"
                     className="w-full h-full object-cover"
                   />
