@@ -119,18 +119,20 @@ const Index = () => {
     });
   };
 
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
   return (
     <div className="min-h-screen">
       <header className="bg-white border-b sticky top-0 z-50 shadow-sm">
         <div className="container mx-auto px-4 py-3 flex justify-between items-center">
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-2">
             <img 
               src="https://cdn.poehali.dev/files/4a1c7245-dc32-4192-a9bc-1656b648a555.jpeg" 
               alt="Атмосфера - студия дизайна и ремонта"
-              className="h-12 w-auto object-contain"
+              className="h-10 sm:h-12 w-auto object-contain"
             />
             <div className="hidden sm:block">
-              <div className="text-xl font-bold leading-tight" style={{color: '#9B7E4F'}}>Атмосфера</div>
+              <div className="text-lg sm:text-xl font-bold leading-tight" style={{color: '#9B7E4F'}}>Атмосфера</div>
               <div className="text-xs" style={{color: '#9B7E4F', opacity: 0.7}}>Студия дизайна и ремонта</div>
             </div>
           </div>
@@ -140,14 +142,38 @@ const Index = () => {
             <a href="#calculator" className="text-foreground hover:text-primary transition">Цены</a>
             <a href="#contact" className="text-foreground hover:text-primary transition">Контакты</a>
           </nav>
-          <Button className="hidden md:inline-flex" style={{backgroundColor: '#9B7E4F', color: 'white'}} onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#8A6F42'} onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#9B7E4F'}>
-            <Icon name="Phone" size={16} className="mr-2" />
-            Позвонить
-          </Button>
+          <div className="flex items-center gap-2">
+            <Button className="hidden md:inline-flex" style={{backgroundColor: '#9B7E4F', color: 'white'}} onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#8A6F42'} onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#9B7E4F'}>
+              <Icon name="Phone" size={16} className="mr-2" />
+              Позвонить
+            </Button>
+            <Button 
+              variant="ghost" 
+              size="icon" 
+              className="md:hidden"
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            >
+              <Icon name={mobileMenuOpen ? "X" : "Menu"} size={24} />
+            </Button>
+          </div>
         </div>
+        {mobileMenuOpen && (
+          <div className="md:hidden border-t">
+            <nav className="container mx-auto px-4 py-4 flex flex-col gap-4">
+              <a href="#services" className="text-foreground hover:text-primary transition py-2" onClick={() => setMobileMenuOpen(false)}>Услуги</a>
+              <a href="#portfolio" className="text-foreground hover:text-primary transition py-2" onClick={() => setMobileMenuOpen(false)}>Портфолио</a>
+              <a href="#calculator" className="text-foreground hover:text-primary transition py-2" onClick={() => setMobileMenuOpen(false)}>Цены</a>
+              <a href="#contact" className="text-foreground hover:text-primary transition py-2" onClick={() => setMobileMenuOpen(false)}>Контакты</a>
+              <Button className="w-full" style={{backgroundColor: '#9B7E4F', color: 'white'}}>
+                <Icon name="Phone" size={16} className="mr-2" />
+                Позвонить
+              </Button>
+            </nav>
+          </div>
+        )}
       </header>
 
-      <section className="relative h-[600px] flex items-center justify-center overflow-hidden">
+      <section className="relative h-[400px] sm:h-[500px] md:h-[600px] flex items-center justify-center overflow-hidden">
         <div 
           className="absolute inset-0 bg-cover bg-center"
           style={{
@@ -156,34 +182,34 @@ const Index = () => {
           }}
         />
         <div className="relative z-10 text-center text-white px-4 animate-fade-in">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6">
             Дизайн и ремонт<br />по всему Краснодарскому краю
           </h1>
-          <p className="text-xl md:text-2xl mb-8 text-gray-200">
+          <p className="text-base sm:text-lg md:text-xl lg:text-2xl mb-6 sm:mb-8 text-gray-200">
             Авторские проекты и качественный ремонт «под ключ»
           </p>
-          <div className="flex gap-4 justify-center flex-wrap">
-            <Button size="lg" className="bg-secondary hover:bg-secondary/90">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4">
+            <Button size="lg" className="bg-secondary hover:bg-secondary/90 w-full sm:w-auto">
               <Icon name="Palette" size={20} className="mr-2" />
-              Заказать дизайн-проект
+              <span className="text-sm sm:text-base">Заказать дизайн-проект</span>
             </Button>
-            <Button size="lg" variant="outline" className="bg-white/10 backdrop-blur-sm border-white text-white hover:bg-white hover:text-primary">
+            <Button size="lg" variant="outline" className="bg-white/10 backdrop-blur-sm border-white text-white hover:bg-white hover:text-primary w-full sm:w-auto">
               <Icon name="Calculator" size={20} className="mr-2" />
-              Рассчитать стоимость
+              <span className="text-sm sm:text-base">Рассчитать стоимость</span>
             </Button>
           </div>
         </div>
       </section>
 
-      <section className="py-20 bg-white">
+      <section className="py-12 sm:py-16 md:py-20 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center mb-4">О студии «Атмосфера»</h2>
-          <p className="text-center text-muted-foreground mb-12 text-lg max-w-3xl mx-auto">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-3 sm:mb-4">О студии «Атмосфера»</h2>
+          <p className="text-center text-muted-foreground mb-8 sm:mb-12 text-base sm:text-lg max-w-3xl mx-auto">
             Посмотрите видео о нашей студии, процессе работы и реализованных проектах
           </p>
           
           <div className="max-w-5xl mx-auto">
-            <div className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl bg-muted">
+            <div className="relative aspect-video rounded-lg sm:rounded-2xl overflow-hidden shadow-2xl bg-muted">
               <iframe
                 className="absolute inset-0 w-full h-full"
                 src="https://www.youtube.com/embed/dQw4w9WgXcQ"
@@ -193,27 +219,27 @@ const Index = () => {
               />
             </div>
             
-            <div className="grid md:grid-cols-3 gap-8 mt-12">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 mt-8 sm:mt-12">
               <div className="text-center">
-                <div className="text-4xl font-bold text-primary mb-2">150+</div>
-                <p className="text-muted-foreground">Реализованных проектов</p>
+                <div className="text-3xl sm:text-4xl font-bold text-primary mb-2">150+</div>
+                <p className="text-sm sm:text-base text-muted-foreground">Реализованных проектов</p>
               </div>
               <div className="text-center">
-                <div className="text-4xl font-bold text-primary mb-2">20 лет</div>
-                <p className="text-muted-foreground">На рынке дизайна и ремонта</p>
+                <div className="text-3xl sm:text-4xl font-bold text-primary mb-2">20 лет</div>
+                <p className="text-sm sm:text-base text-muted-foreground">На рынке дизайна и ремонта</p>
               </div>
               <div className="text-center">
-                <div className="text-4xl font-bold text-primary mb-2">98%</div>
-                <p className="text-muted-foreground">Довольных клиентов</p>
+                <div className="text-3xl sm:text-4xl font-bold text-primary mb-2">98%</div>
+                <p className="text-sm sm:text-base text-muted-foreground">Довольных клиентов</p>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="py-20 bg-background">
+      <section className="py-12 sm:py-16 md:py-20 bg-background">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center mb-12">Наши преимущества</h2>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-8 sm:mb-12">Наши преимущества</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {advantages.map((advantage, index) => (
               <Card key={index} className="text-center hover:shadow-lg transition-shadow animate-scale-in">
@@ -230,10 +256,10 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="services" className="py-20 bg-white">
+      <section id="services" className="py-12 sm:py-16 md:py-20 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center mb-4">Услуги</h2>
-          <p className="text-center text-muted-foreground mb-12 text-lg">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-3 sm:mb-4">Услуги</h2>
+          <p className="text-center text-muted-foreground mb-8 sm:mb-12 text-base sm:text-lg">
             Полный спектр работ от дизайна до финальной отделки
           </p>
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
@@ -292,10 +318,10 @@ const Index = () => {
         </div>
       </section>
 
-      <section className="py-20 bg-muted/20">
+      <section className="py-12 sm:py-16 md:py-20 bg-muted/20">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
-            <h2 className="text-4xl font-bold text-center mb-6">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-4 sm:mb-6">
               Профессиональный ремонт квартир, домов и коммерческой недвижимости в Краснодаре
             </h2>
             <p className="text-center text-lg text-muted-foreground mb-12">
@@ -411,10 +437,10 @@ const Index = () => {
         </div>
       </section>
 
-      <section className="py-20 bg-white">
+      <section className="py-12 sm:py-16 md:py-20 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center mb-4">Наша команда</h2>
-          <p className="text-center text-muted-foreground mb-12 text-lg">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-3 sm:mb-4">Наша команда</h2>
+          <p className="text-center text-muted-foreground mb-8 sm:mb-12 text-base sm:text-lg">
             Профессионалы с многолетним опытом работы
           </p>
           
@@ -478,10 +504,10 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="portfolio" className="py-20 bg-muted/30">
+      <section id="portfolio" className="py-12 sm:py-16 md:py-20 bg-muted/30">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center mb-4">Портфолио</h2>
-          <p className="text-center text-muted-foreground mb-8 text-lg">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-3 sm:mb-4">Портфолио</h2>
+          <p className="text-center text-muted-foreground mb-6 sm:mb-8 text-base sm:text-lg">
             Реализованные проекты наших клиентов
           </p>
           
@@ -566,10 +592,10 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="calculator" className="py-20 bg-white">
+      <section id="calculator" className="py-12 sm:py-16 md:py-20 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center mb-4">Калькулятор стоимости</h2>
-          <p className="text-center text-muted-foreground mb-12 text-lg">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-3 sm:mb-4">Калькулятор стоимости</h2>
+          <p className="text-center text-muted-foreground mb-8 sm:mb-12 text-base sm:text-lg">
             Узнайте ориентировочную стоимость вашего проекта
           </p>
           
@@ -624,11 +650,11 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="contact" className="py-20 bg-primary text-primary-foreground">
+      <section id="contact" className="py-12 sm:py-16 md:py-20 bg-primary text-primary-foreground">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-4xl font-bold text-center mb-4">Получить консультацию</h2>
-            <p className="text-center text-primary-foreground/90 mb-12 text-lg">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-3 sm:mb-4">Получить консультацию</h2>
+            <p className="text-center text-primary-foreground/90 mb-8 sm:mb-12 text-base sm:text-lg">
               Оставьте заявку, и мы свяжемся с вами в течение 15 минут
             </p>
             
@@ -679,7 +705,7 @@ const Index = () => {
         </div>
       </section>
 
-      <footer className="bg-foreground text-background py-12">
+      <footer className="bg-foreground text-background py-8 sm:py-12">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-3 gap-8 mb-8">
             <div>
