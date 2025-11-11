@@ -612,9 +612,12 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-3 gap-8 mb-8">
             <div>
-              <div className="flex items-center gap-2 mb-4">
-                <Icon name="Home" size={28} className="text-secondary" />
-                <span className="text-2xl font-bold">Атмосфера</span>
+              <div className="mb-4">
+                <img 
+                  src="https://cdn.poehali.dev/files/4a1c7245-dc32-4192-a9bc-1656b648a555.jpeg" 
+                  alt="Атмосфера - студия дизайна и ремонта"
+                  className="h-16 w-auto object-contain brightness-0 invert"
+                />
               </div>
               <p className="text-background/80">
                 Студия дизайна и ремонта<br />
