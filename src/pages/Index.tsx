@@ -129,6 +129,10 @@ const Index = () => {
               alt="Атмосфера - студия дизайна и ремонта"
               className="h-12 w-auto object-contain"
             />
+            <div className="hidden sm:block">
+              <div className="text-xl font-bold text-primary leading-tight">Атмосфера</div>
+              <div className="text-xs text-muted-foreground">Студия дизайна и ремонта</div>
+            </div>
           </div>
           <nav className="hidden md:flex gap-6">
             <a href="#services" className="text-foreground hover:text-primary transition">Услуги</a>
