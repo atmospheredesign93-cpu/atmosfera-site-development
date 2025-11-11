@@ -456,7 +456,7 @@ const Index = () => {
               </p>
               <div className="flex gap-4">
                 <a 
-                  href="https://youtube.com" 
+                  href="https://www.youtube.com/channel/UCHoe83qLmZU64UJnxe2uFlA" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="w-10 h-10 bg-[#FF0000] hover:bg-[#CC0000] rounded-full flex items-center justify-center transition-colors"
