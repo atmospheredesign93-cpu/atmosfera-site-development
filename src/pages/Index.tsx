@@ -285,6 +285,125 @@ const Index = () => {
         </div>
       </section>
 
+      <section className="py-20 bg-muted/20">
+        <div className="container mx-auto px-4">
+          <div className="max-w-5xl mx-auto">
+            <h2 className="text-4xl font-bold text-center mb-6">
+              Профессиональный ремонт квартир, домов и коммерческой недвижимости в Краснодаре
+            </h2>
+            <p className="text-center text-lg text-muted-foreground mb-12">
+              Быстро, качественно, с гарантией до 3 лет
+            </p>
+
+            <div className="prose prose-lg max-w-none">
+              <p className="text-lg leading-relaxed mb-6">
+                Вы ищете надёжную компанию по <strong>ремонту квартир в Краснодаре</strong>? Хотите сделать косметический, капитальный или евроремонт без стресса и задержек? Мы — команда опытных мастеров, которая уже более 8 лет помогает жителям Краснодарского края превращать жильё в уютное и стильное пространство.
+              </p>
+
+              <div className="grid md:grid-cols-2 gap-6 my-8">
+                <Card>
+                  <CardContent className="p-6">
+                    <h3 className="text-xl font-semibold mb-4 flex items-center gap-2">
+                      <Icon name="Home" className="text-primary" size={24} />
+                      Ремонт квартир и домов
+                    </h3>
+                    <ul className="space-y-2 text-muted-foreground">
+                      <li>• Косметический ремонт — от 3 500 ₽/м²</li>
+                      <li>• Капитальный ремонт — от 6 500 ₽/м²</li>
+                      <li>• Евроремонт — от 9 000 ₽/м²</li>
+                      <li>• Отделка новостроек</li>
+                      <li>• Перепланировка помещений</li>
+                    </ul>
+                  </CardContent>
+                </Card>
+
+                <Card>
+                  <CardContent className="p-6">
+                    <h3 className="text-xl font-semibold mb-4 flex items-center gap-2">
+                      <Icon name="Building" className="text-primary" size={24} />
+                      Коммерческая недвижимость
+                    </h3>
+                    <ul className="space-y-2 text-muted-foreground">
+                      <li>• Офисы и бизнес-центры</li>
+                      <li>• Магазины и торговые центры</li>
+                      <li>• Рестораны и кафе</li>
+                      <li>• Салоны красоты и клиники</li>
+                      <li>• Индивидуальный расчёт</li>
+                    </ul>
+                  </CardContent>
+                </Card>
+              </div>
+
+              <h3 className="text-2xl font-bold mb-4 mt-12">Почему выбирают нас?</h3>
+              <div className="grid md:grid-cols-2 gap-4 mb-8">
+                <div className="flex gap-3">
+                  <Icon name="CheckCircle" className="text-secondary flex-shrink-0 mt-1" size={20} />
+                  <div>
+                    <strong>Индивидуальный подход</strong> — каждый проект разрабатываем с учётом ваших пожеланий, бюджета и стиля интерьера
+                  </div>
+                </div>
+                <div className="flex gap-3">
+                  <Icon name="CheckCircle" className="text-secondary flex-shrink-0 mt-1" size={20} />
+                  <div>
+                    <strong>Фиксированная цена</strong> — никаких скрытых платежей, стоимость озвучивается заранее и не меняется
+                  </div>
+                </div>
+                <div className="flex gap-3">
+                  <Icon name="CheckCircle" className="text-secondary flex-shrink-0 mt-1" size={20} />
+                  <div>
+                    <strong>Работаем по договору</strong> — ваша безопасность и прозрачность процесса гарантированы
+                  </div>
+                </div>
+                <div className="flex gap-3">
+                  <Icon name="CheckCircle" className="text-secondary flex-shrink-0 mt-1" size={20} />
+                  <div>
+                    <strong>Гарантия до 3 лет</strong> — мы уверены в качестве своей работы
+                  </div>
+                </div>
+              </div>
+
+              <h3 className="text-2xl font-bold mb-4 mt-12">Виды ремонта, которые мы выполняем</h3>
+              <div className="space-y-4 mb-8">
+                <div>
+                  <h4 className="font-semibold text-lg mb-2">Косметический ремонт</h4>
+                  <p className="text-muted-foreground">Идеален для сдачи в аренду или свежего вида без масштабных изменений. Включает поклейку обоев, покраску, замену напольных покрытий.</p>
+                </div>
+                <div>
+                  <h4 className="font-semibold text-lg mb-2">Капитальный ремонт</h4>
+                  <p className="text-muted-foreground">Полная замена инженерных систем, выравнивание стен, новая электрика и сантехника. Ремонт «под ключ» за 30–60 дней.</p>
+                </div>
+                <div>
+                  <h4 className="font-semibold text-lg mb-2">Евроремонт</h4>
+                  <p className="text-muted-foreground">Элитный уровень с дизайнерским контролем, дорогими материалами и точностью до миллиметра.</p>
+                </div>
+                <div>
+                  <h4 className="font-semibold text-lg mb-2">Ремонт домов и коттеджей</h4>
+                  <p className="text-muted-foreground">Сложные объёмы, утепление, кровля, инженерные сети, фасадные работы.</p>
+                </div>
+              </div>
+
+              <h3 className="text-2xl font-bold mb-4 mt-12">Работаем по всем районам Краснодара</h3>
+              <p className="text-muted-foreground mb-6">
+                Центр, Западный, Прикубанский, Карасунский, Юбилейный, Северный, Пашковский, 40 лет Победы и другие районы. 
+                Также выезжаем в Сочи, Геленджик, Анапу, Новороссийск и другие города Краснодарского края.
+              </p>
+
+              <div className="bg-primary/5 border-l-4 border-primary p-6 rounded-lg mt-8">
+                <p className="text-lg font-semibold mb-2">Готовы начать ремонт?</p>
+                <p className="text-muted-foreground mb-4">
+                  Позвоните нам или оставьте заявку — и уже завтра ваша квартира начнёт меняться. 
+                  Бесплатная консультация и выезд замерщика!
+                </p>
+                <Button size="lg" className="mt-2">
+                  <Icon name="Phone" size={20} className="mr-2" />
+                  Получить консультацию
+                </Button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="portfolio" className="py-20 bg-muted/30">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl font-bold text-center mb-4">Портфолио</h2>
