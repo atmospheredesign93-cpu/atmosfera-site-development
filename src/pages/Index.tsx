@@ -620,10 +620,50 @@ const Index = () => {
                 <Icon name="Home" size={28} className="text-secondary" />
                 <span className="text-2xl font-bold">Атмосфера</span>
               </div>
-              <p className="text-background/80">
+              <p className="text-background/80 mb-6">
                 Студия дизайна и ремонта<br />
                 по всему Краснодарскому краю
               </p>
+              <div className="flex gap-4">
+                <a 
+                  href="https://youtube.com" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 bg-background/10 hover:bg-secondary rounded-full flex items-center justify-center transition-colors"
+                  aria-label="YouTube"
+                >
+                  <Icon name="Youtube" size={20} />
+                </a>
+                <a 
+                  href="https://vk.com" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 bg-background/10 hover:bg-secondary rounded-full flex items-center justify-center transition-colors"
+                  aria-label="ВКонтакте"
+                >
+                  <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M15.07 2H8.93C3.33 2 2 3.33 2 8.93v6.14C2 20.67 3.33 22 8.93 22h6.14c5.6 0 6.93-1.33 6.93-6.93V8.93C22 3.33 20.67 2 15.07 2zm3.58 14.66h-1.4c-.61 0-.8-.49-1.89-1.59-.95-.93-1.37-1.06-1.61-1.06-.33 0-.42.09-.42.53v1.45c0 .39-.13.63-1.14.63-1.68 0-3.55-.99-4.86-2.84-1.97-2.8-2.51-4.91-2.51-5.34 0-.24.09-.46.53-.46h1.4c.39 0 .54.18.69.6.76 2.2 2.04 4.13 2.56 4.13.2 0 .29-.09.29-.59v-2.29c-.06-.98-.58-1.06-.58-1.41 0-.19.16-.39.42-.39h2.2c.33 0 .45.18.45.57v3.08c0 .33.15.45.24.45.2 0 .36-.12.73-.49 1.14-1.27 1.96-3.24 1.96-3.24.11-.23.28-.46.72-.46h1.4c.47 0 .57.24.47.57-.16.81-1.93 3.65-1.93 3.65-.16.27-.22.39 0 .69.16.23.69.68 1.05 1.08.65.75 1.15 1.38 1.28 1.81.14.43-.07.65-.5.65z"/>
+                  </svg>
+                </a>
+                <a 
+                  href="https://wa.me/78611234567" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 bg-background/10 hover:bg-secondary rounded-full flex items-center justify-center transition-colors"
+                  aria-label="WhatsApp"
+                >
+                  <Icon name="MessageCircle" size={20} />
+                </a>
+                <a 
+                  href="https://t.me/atmosfera_design" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 bg-background/10 hover:bg-secondary rounded-full flex items-center justify-center transition-colors"
+                  aria-label="Telegram"
+                >
+                  <Icon name="Send" size={20} />
+                </a>
+              </div>
             </div>
             
             <div>
