@@ -465,7 +465,7 @@ const Index = () => {
                   <Icon name="Youtube" size={20} className="text-white" />
                 </a>
                 <a 
-                  href="https://vk.com" 
+                  href="https://vk.com/atmosferaremontkrd?from=groups" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="w-10 h-10 bg-[#0077FF] hover:bg-[#0066DD] rounded-full flex items-center justify-center transition-colors"
