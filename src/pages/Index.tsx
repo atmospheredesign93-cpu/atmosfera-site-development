@@ -36,16 +36,13 @@ const Index = () => {
       <Header />
 
       <section className="relative h-[400px] sm:h-[500px] md:h-[600px] flex items-center justify-center overflow-hidden">
-        <video 
-          autoPlay 
-          loop 
-          muted 
-          playsInline
-          className="absolute inset-0 w-full h-full object-cover brightness-50"
-        >
-          <source src="https://cdn.poehali.dev/projects/249bcc05-b9e1-4424-ad17-f8228415d084/files/video-hero.mp4" type="video/mp4" />
-        </video>
-        <div className="absolute inset-0 bg-gradient-to-b from-black/30 to-black/50" />
+        <div 
+          className="absolute inset-0 bg-cover bg-center"
+          style={{
+            backgroundImage: `url('https://cdn.poehali.dev/projects/249bcc05-b9e1-4424-ad17-f8228415d084/files/9121fdcb-3038-48ea-8902-20203ef82be1.jpg')`,
+            filter: 'brightness(0.6)'
+          }}
+        />
         <div className="relative z-10 text-center text-white px-4 animate-fade-in">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6">
             Дизайн и ремонт<br />в Краснодаре и по краю
